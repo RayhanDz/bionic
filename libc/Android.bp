@@ -863,10 +863,15 @@ cc_library_static {
             },
             kryo300: {
                 srcs: [
+                    "arch-arm64/kryo300/bionic/__memcpy.S",
                     "arch-arm64/kryo300/bionic/memcpy.S",
+                    "arch-arm64/kryo300/bionic/memmove.S",
+                    "arch-arm64/kryo300/bionic/wmemmove.S",
                 ],
                 exclude_srcs: [
                     "arch-arm64/generic/bionic/memcpy.S",
+                    "arch-arm64/generic/bionic/memmove.S",
+                    "arch-arm64/generic/bionic/wmemmove.S",
                 ],
             },
         },
